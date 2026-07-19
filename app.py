@@ -9,7 +9,7 @@ import numpy as np
 import seaborn as sb
 import re
 import nltk
-nlyk.download('punkt')
+nltk.download('punkt')
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from matplotlib import pyplot as plt
