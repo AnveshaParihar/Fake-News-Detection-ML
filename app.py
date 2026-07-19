@@ -9,6 +9,7 @@ import numpy as np
 import seaborn as sb
 import re
 import nltk
+nlyk.download('punkt')
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from matplotlib import pyplot as plt
@@ -65,5 +66,7 @@ def predict():
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
