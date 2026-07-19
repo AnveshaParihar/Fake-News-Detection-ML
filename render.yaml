@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fake-news-detection-ml
+    runtime: python
+    buildCommand: pip install --upgrade pip setuptools && pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
